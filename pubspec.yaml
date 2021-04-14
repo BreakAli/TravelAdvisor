@@ -1,0 +1,168 @@
+name: travel_advisor
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  # Josh: dependencies
+
+  # Login
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.0+1
+  provider: ^4.3.3
+  auto_size_text: ^2.1.0
+  # Weather
+  weather: ^1.2.4
+  
+  http: ^0.12.0
+  geolocator: ^6.0.1
+  # Formatting for date
+  intl: ^0.16.1
+  # Fonts
+  #google_fonts: ^1.1.2
+
+  # end Josh's
+
+  # Ali: Added this dependency for google map interaction
+  google_maps_flutter: ^1.0.3
+  # end Ali's
+
+  # Ali: Added this for custom map markers
+  clippy_flutter: ^1.1.1
+
+  # Ali: Added this for the ability to launch google maps
+  maps_launcher: ^1.2.2+2
+  flutter_svg: # only if you want to use icons as they are svgs
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.1+1
+
+  # Meet: This dependency will allow user to open popup menus
+  focused_menu: ^1.0.2
+
+  # This dependency will help us keep naviagtion bar even in different pages
+  custom_navigator: ^0.3.0
+  # end Meet's
+
+  # This dependecy stores data into firebase database 
+  firebase_database: ^6.0.0
+
+  # This dependency will help us get data from firebase cloud
+  cloud_firestore: ^0.16.0+1
+  # end Meet's
+
+  #Vedant adding pops
+  #rflutter_alert: ^2.0.2
+  url_launcher: ^5.4.11
+  #end vedant 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+ 
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/icon1.jpg
+    - assets/BryceCanyonNationalPark1.jpg
+    - assets/GrandTetonNationalPark.jpg
+    - assets/ZionNationalPark.jpg
+    - assets/CongareeNationalPark.jpg
+    - assets/YosemiteNationalPark.jpg
+    - assets/IndianaDunesNationalPark.jpg
+    - assets/NewRiverGorgeNationalPark.jpg
+    - assets/MammothCaveNationalPark.jpg
+    - assets/SmokeyMountainNationalPark.jpg
+    - assets/YellowstoneNationalPark.jpg
+    - assets/GlacierNationalPark.jpg
+    - assets/GrandTetonNationalPark.jpg
+    - assets/GrandCanyonNationalPark.jpg
+    - assets/StartupPage.jpg
+    - google_fonts/FrederickatheGreat-Regular.ttf
+
+    # Yellowstone Images
+    - assets/YS-YellowstoneLake.jpg
+    - assets/YS-OldFaithful.jpg
+    - assets/YS-MudVolcano.jpg
+    - assets/YS-MountWashburn.jpg
+    - assets/YS-MammothHotSprings.jpg
+    # Bryce Canyon Images
+    - assets/BC-BrycePoint.jpg
+    - assets/BC-FairviewPoint.jpg
+    - assets/BC-MossyWindow.jpg
+    - assets/BC-NaturalBridge.jpg
+    - assets/BC-SunrisePoint.jpg
+    # Yosemite Images
+    - assets/YO-ElCapitan.jpg
+    - assets/YO-GlacierPoint.jpg
+    - assets/YO-MirrorLake.jpg
+    - assets/YO-VernalFalls.jpg
+    - assets/YO-YosemiteFalls.jpg
+    # Yellowstone Images
+    - assets/ZI-CheckerboardMesa.jpg
+    - assets/ZI-EmeraldPools.jpg
+    - assets/ZI-WeepingRock.jpg
+    - assets/ZI-ZionCanyon.jpg
+    - assets/ZI-ZionHighway.jpg
+    # - images/a_dot_ham.jpeg
+    # Map Marker Image Assets
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
